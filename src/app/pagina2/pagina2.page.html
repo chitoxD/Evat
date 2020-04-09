@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Estado Neurológico, 1 puntos:
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p></p>
+
+  <ion-item>
+    <ion-label>¿El paciente...</ion-label>
+  </ion-item>
+
+  <ion-list>
+      <ion-item (click)="ir_salida1()">
+        <ion-checkbox disabled="false"></ion-checkbox>
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <ion-label class="ion-text-wrap"> ... está somnoliento cuando nadie lo molesta?</ion-label>
+      </ion-item>
+
+    <ion-item (click)="ir_salida2()">
+      <ion-checkbox disabled="false"></ion-checkbox>
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+      <ion-label class="ion-text-wrap">... responde solo a estímulos verbales?</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-row>
+    <ion-col>
+      <ion-button size="large" color="primary" (click)="regreso1()">
+        Anterior
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button size="large" color="primary" (click)="adelante3()">
+        Siguiente
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

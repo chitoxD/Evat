@@ -1,0 +1,7 @@
+{
+  "name": "TrueEvat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

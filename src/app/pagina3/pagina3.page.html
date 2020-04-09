@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Estado Neurológico, 0 puntos:
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p></p>
+
+  <ion-item>
+    <ion-label>¿El paciente...</ion-label>
+  </ion-item>
+
+  <ion-list>
+      <ion-item (click)="ir_salida1()">
+        <ion-checkbox disabled="false"></ion-checkbox>
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <ion-label class="ion-text-wrap"> ... está alerta o durmiendo apropiadamente?</ion-label>
+      </ion-item>
+
+    <ion-item (click)="ir_salida2()">
+      <ion-checkbox disabled="false"></ion-checkbox>
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+      <ion-label class="ion-text-wrap">... está en su estado basal de alerta?</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-row>
+    <ion-col>
+      <ion-button size="large" color="primary" (click)="regreso2()">
+        Anterior
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button size="large" color="primary" (click)="alerta()">
+        Siguiente
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
