@@ -17,6 +17,10 @@ const routes: Routes = [
     path: 'salida/:estado/:opcion_punteo/:punteo',
     loadChildren: () => import('./salida/salida.module').then( m => m.SalidaPageModule)
   },
+  {
+    path: 'extra',
+    loadChildren: () => import('./extra/extra.module').then( m => m.ExtraPageModule)
+  },
 ];
 
 @NgModule({

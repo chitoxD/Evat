@@ -1,0 +1,38 @@
+<ion-content padding color=primary>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <ion-list>
+      <ion-item color=primary *ngFor="let entry of form">
+        <ion-label style="color: black;">{{entry.val}}</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round" strong="true" size="large" color="tertiary" (click)="anterior()">
+            Anterior
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button shape="round" strong="true" size="large" color="tertiary" (click)="adelante()">
+            Adelante
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+</ion-content>

@@ -16,6 +16,10 @@ export class SalidaPage implements OnInit {
   back(){
     this.router.navigate(['/pagina3'])
   }
+  //
+  extra(){
+    this.router.navigate(['/extra'])
+  }
   ngOnInit() {
     let estado = this.route.snapshot.paramMap.get('estado')
     let opcion_punteo = this.route.snapshot.paramMap.get('opcion_punteo')
