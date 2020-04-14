@@ -4,14 +4,14 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', 
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+    loadChildren: () => import('./Neurologico P1/home.module').then( m => m.HomePageModule)},
   {
     path: 'pagina2',
-    loadChildren: () => import('./pagina2/pagina2.module').then( m => m.Pagina2PageModule)
+    loadChildren: () => import('./Neurologico P2/pagina2.module').then( m => m.Pagina2PageModule)
   },
   {
     path: 'pagina3',
-    loadChildren: () => import('./pagina3/pagina3.module').then( m => m.Pagina3PageModule)
+    loadChildren: () => import('./Neurologico P3/pagina3.module').then( m => m.Pagina3PageModule)
   },
   {
     path: 'salida/:estado/:opcion_punteo/:punteo',
