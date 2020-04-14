@@ -4,24 +4,24 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #d2f8cede;
-  --ion-color-primary-rgb: 240, 255, 240;
+  --ion-color-primary: #3880ff;
+  --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
   --ion-color-primary-tint: #4c8dff;
 
   /** secondary **/
-  --ion-color-secondary: #dcfff0;
-  --ion-color-secondary-rgb: 220, 255, 220;
+  --ion-color-secondary: #3dc2ff;
+  --ion-color-secondary-rgb: 61, 194, 255;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
   --ion-color-secondary-shade: #36abe0;
   --ion-color-secondary-tint: #50c8ff;
 
   /** tertiary **/
-  --ion-color-tertiary: #b1b1b181;
-  --ion-color-tertiary-rgb: 255, 255, 255;
+  --ion-color-tertiary: #5260ff;
+  --ion-color-tertiary-rgb: 82, 96, 255;
   --ion-color-tertiary-contrast: #313131;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
   --ion-color-tertiary-shade: #4854e0;
@@ -74,7 +74,21 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
-}
+
+  ion-searchbar {
+    --ion-background-color: rgb(255, 255, 255);
+  }  
+  ion-content {
+    --ion-background-color: rgb(220, 255, 220);
+  }
+  ion-header {
+      --ion-background-color: rgb(220, 255, 220);
+  }
+  ion-list {
+    --ion-background-color: rgb(220, 255, 220);
+  }
+  }
+
 
 @media (prefers-color-scheme: dark) {
   /*
@@ -226,7 +240,5 @@
     --ion-tab-bar-background: #1f1f1f;
   }
 
-  ion-title.title-large {
-    --color: white;
-  }
+
 }

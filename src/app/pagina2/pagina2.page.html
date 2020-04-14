@@ -1,30 +1,36 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar>
     <ion-title>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="primary">
-  <p color="primary"></p>
-  <ion-list lines=none>
-      <ion-item color="primary">
+<ion-content >
+  <p ></p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-list lines=none mode=ios>
+      <ion-item >
         <p style="color:black;" >
           Estado Neurológico, 1 puntos:
         </p>
       </ion-item>
 
-      <ion-item color="primary">
+      <ion-item >
         <ion-label style="color:black;">¿El paciente...</ion-label>
       </ion-item>
 
-      <ion-item color="primary" (click)="ir_salida1()">
+      <ion-item  (click)="ir_salida1()">
         <ion-checkbox disabled="false"></ion-checkbox>
         &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
         <ion-label style="color:black;" class="ion-text-wrap"> ... está somnoliento cuando nadie lo molesta?</ion-label>
       </ion-item>
 
-    <ion-item color="primary" (click)="ir_salida2()">
+    <ion-item (click)="ir_salida2()">
       <ion-checkbox disabled="false"></ion-checkbox>
       &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
       <ion-label style="color:black;"class="ion-text-wrap">... responde solo a estímulos verbales?</ion-label>
@@ -34,12 +40,12 @@
 
   <ion-row>
     <ion-col>
-      <ion-button shape="round" strong="true" size="large" color="tertiary" (click)="regreso1()">
+      <ion-button strong="true" size="large" color="primary" (click)="regreso1()">
         Anterior
       </ion-button>
     </ion-col>
     <ion-col>
-      <ion-button shape="round" strong="true" size="large" color="tertiary" (click)="adelante3()">
+      <ion-button strong="true" size="large" color="primary" (click)="adelante3()">
         Siguiente
       </ion-button>
     </ion-col>

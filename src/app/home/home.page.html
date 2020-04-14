@@ -1,35 +1,40 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color=primary>
+  <ion-toolbar>
     <ion-title>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding color="primary">
-    <p color="primary"></p>
-    <ion-list lines="none">
-      <ion-item color="primary">
+<ion-content>
+    <p></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ion-list lines="none" mode=ios>
+      <ion-item>
         <p style="color:black;">
           Estado Neurológico, 2 puntos:
         </p>
       </ion-item>
 
-      <ion-item color="primary">
+      <ion-item>
         <ion-label style="color: black;">¿El paciente...</ion-label>
       </ion-item>
 
-        <ion-item (click)="ir_salida1()" color="primary">
+        <ion-item (click)="ir_salida1()" >
           <ion-checkbox disabled="false" checked = "false"></ion-checkbox>
           &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           <ion-label style="color: black;"> ... está irritable?</ion-label>
         </ion-item>
 
-        <ion-item (click)="ir_salida2()" color="primary">
+        <ion-item (click)="ir_salida2()" >
           <ion-checkbox disabled="false"></ion-checkbox>
           &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           <ion-label style="color: black;">... es difícil de consolar?</ion-label>
         </ion-item>
-        <ion-item (click)="ir_salida3()" color="primary">
+        <ion-item (click)="ir_salida3()" >
           <ion-checkbox disabled="false"></ion-checkbox>
           &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           <ion-label class="ion-text-wrap" style="color: black;">... responde solo a estímulos dolorosos?</ion-label>
@@ -38,12 +43,12 @@
 
     <ion-row>
       <ion-col>
-        <ion-button shape="round" strong="true" size="large" color="tertiary" (click)="regreso()">
+        <ion-button  strong="true" size="large" color="primary" (click)="regreso()">
           Anterior
         </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button shape="round" strong="true" size="large" color="tertiary" (click)="adelante()">
+        <ion-button  strong="true" size="large" color="primary" (click)="adelante()">
             Siguiente
         </ion-button>
       </ion-col>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-extra',
@@ -7,19 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExtraPage implements OnInit {
 
-  constructor() { }
-
-  public form = [
-    { val: 'Preocupacion de la enfermera', isChecked: false },
-    { val: 'Preocupacion de la familia', isChecked: false }
-  ];
+  constructor(private router: Router) { }
+  preo_enfermera1(){
+    //this.router.navigate(['/']) aqui la pagina donde ira al final, de la primera opcion
+  }
+  preo_enfermera2(){
+    //this.router.navigate(['/']) aqui la pagina donde ira al final, de la segunda opcion
+  }
 
   anterior(){
-
+    //this.router.navigate(['/']) aqui ira a la anterior pagina.
   }
   adelante(){
-    
+    //this.router.navigate(['/']) aqui ira a la siguiente pagina.
   }
+
   ngOnInit() {
   }
 
