@@ -17,7 +17,7 @@ export class HomePage {
   regreso(){
 
   }
-
+// en los metodos se envia la pagina,estado,checkbox y el punteo
   ir_salida1(){//esta es de la primera opcion
     this.router.navigate(['/salida/Neurológico/Irritable/2']);
   }

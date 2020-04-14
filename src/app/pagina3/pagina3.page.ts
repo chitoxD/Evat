@@ -14,7 +14,7 @@ export class Pagina3Page implements OnInit {
   regreso2(){
     this.router.navigate(['/pagina2'])
   }
-  
+// en los metodos se envia la pagina,estado,checkbox y el punteo
   ir_salida1(){
     this.router.navigate(['salida/Neurológico/alerta o durmiendo/0']);
   }
